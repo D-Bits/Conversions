@@ -1,5 +1,5 @@
-from temperature import farenheit_to_celsius, celsius_to_farenheit
-from lengths import feet_to_meters, meters_to_feet, miles_to_kilos
+from temperature import fahrenheit_to_celsius, celsius_to_fahrenheit, celsius_to_kelvin, kelvin_to_celsius
+from lengths import feet_to_meters, meters_to_feet, miles_to_kilometers, kilometers_to_miles
 
 
 options = {
@@ -20,18 +20,19 @@ if __name__ == "__main__":
         
         print(key, val)
 
+    print()
     conversion = int(input('Enter one of the above integers to specify a conversion: '))
+    print()
 
     if conversion == 1:
-        farenheit_to_celsius()
+        fahrenheit_to_celsius()
     elif conversion == 2:
-        celsius_to_farenheit()
+        celsius_to_fahrenheit()
     elif conversion == 3:
-        feet_to_meters()
+        celsius_to_kelvin()
     elif conversion == 4:
-        meters_to_feet()
+        kelvin_to_celsius()
     elif conversion == 5:
-        miles_to_kilos()
-    
+        feet_to_meters()
     else:
         raise Exception('Invalid value entered.')
