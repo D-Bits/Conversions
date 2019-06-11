@@ -3,12 +3,14 @@ from lengths import feet_to_meters, meters_to_feet, miles_to_kilos
 
 
 options = {
-    '1': 'Farenheit to Celsius',
-    '2': 'Celsius to Farenheit',
-    '3': 'Feet to Meters',
-    '4': 'Meters to Feet',
-    '5': 'Miles to Kilometers',
-    '6': 'Kilometers to Miles'
+    '1': 'Fahrenheit to Celsius',
+    '2': 'Celsius to Fahrenheit',
+    '3': 'Celsius to Kelvin',
+    '4': 'Kelvin to Celsius',
+    '5': 'Feet to Meters',
+    '6': 'Meters to Feet',
+    '7': 'Miles to Kilometers',
+    '8': 'Kilometers to Miles'
 }
 
 
@@ -18,7 +20,7 @@ if __name__ == "__main__":
         
         print(key, val)
 
-    conversion = input('Enter one of the above integers to specify a conversion: ')
+    conversion = int(input('Enter one of the above integers to specify a conversion: '))
 
     if conversion == 1:
         farenheit_to_celsius()
