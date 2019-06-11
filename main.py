@@ -12,7 +12,10 @@ from lengths import(
     miles_to_kilometers, 
     kilometers_to_miles
 )
-
+from mass import(
+    pounds_to_kilograms,
+    kilograms_to_pounds
+)
 
 options = {
     '1': 'Fahrenheit to Celsius',
@@ -24,7 +27,9 @@ options = {
     '7': 'Feet to Meters',
     '8': 'Meters to Feet',
     '9': 'Miles to Kilometers',
-    '10': 'Kilometers to Miles'
+    '10': 'Kilometers to Miles',
+    '11': 'Pounds to Kilograms',
+    '12': 'Kilograms to Pounds'
 }
 
 
@@ -58,5 +63,9 @@ if __name__ == "__main__":
         miles_to_kilometers()
     elif conversion == 10:
         kilometers_to_miles()
+    elif conversion == 11:
+        pounds_to_kilograms()
+    elif conversion == 12:
+        kilograms_to_pounds()
     else:
         raise Exception('Invalid value entered.')
