@@ -1,4 +1,11 @@
 
+length_options = {
+    '1': 'Feet to Meters',
+    '2': 'Meters to Feet',
+    '3': 'Miles to Kilometers',
+    '4': 'Kilometers to Miles'
+}
+
 def feet_to_meters():
 
     feet = float(input('Enter an amount of feet to be converted into meters: '))
@@ -30,3 +37,26 @@ def kilometers_to_miles():
 
     print(round(miles, 2))
 
+
+def length_choices():
+
+    print()
+
+    for key, val in length_options.items():
+
+        print(key, val)
+
+    print()
+    conversion = int(input('Enter one of the above integers to specify a length conversion: '))
+    print()
+
+    if conversion == 1:
+        feet_to_meters()
+    elif conversion == 2:
+        meters_to_feet()
+    elif conversion == 3:
+        miles_to_kilometers()
+    elif conversion == 4:
+        kilometers_to_miles()
+    else:
+        raise Exception('Invalid value entered.')

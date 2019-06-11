@@ -1,7 +1,12 @@
 """ 
 A collection of functions to do conversions for 
-measurements of ionizing radiation (REMS, Sieverts, etc)
+measurements of ionizing radiation (Rems, Sieverts, etc)
 """
+
+dosimetry_options = {
+    '1': 'Rems to Sieverts',
+    '2': 'Sieverts to Rems'
+}
 
 def rems_to_sieverts():
 
@@ -17,3 +22,23 @@ def sieverts_to_rems():
     rems = sieverts * 100
 
     print(round(rems, 2))
+
+
+def dosimetry_choices():
+
+    print()
+
+    for key, val in dosimetry_options.items():
+
+        print(key, val)
+
+    print()
+    conversion = int(input('Enter one of the above integers to specify a mass conversion: '))
+    print()
+
+    if conversion == 1:
+        rems_to_sieverts()
+    elif conversion == 2:
+        sieverts_to_rems()
+    else:
+        raise Exception('Invalid value entered.')

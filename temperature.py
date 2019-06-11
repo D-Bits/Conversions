@@ -1,4 +1,12 @@
 
+temp_options = {
+    '1': 'Fahrenheit to Celsius',
+    '2': 'Celsius to Fahrenheit',
+    '3': 'Celsius to Kelvin',
+    '4': 'Kelvin to Celsius',
+    '5': 'Fahrenheit to Kelvin',
+    '6': 'Kelvin to Fahrenheit',
+}
 
 def fahrenheit_to_celsius():
 
@@ -47,3 +55,30 @@ def kelvin_to_fahrenheit():
 
     print(round(fahrenheit, 2))
 
+
+def temp_choices():
+
+    print()
+
+    for key, val in temp_options.items():
+
+        print(key, val)
+
+    print()
+    conversion = int(input('Enter one of the above integers to specify a temperature conversion: '))
+    print()
+
+    if conversion == 1:
+        fahrenheit_to_celsius()
+    elif conversion == 2:
+        celsius_to_fahrenheit()
+    elif conversion == 3:
+        celsius_to_kelvin()
+    elif conversion == 4:
+        kelvin_to_celsius()
+    elif conversion == 5:
+        fahrenheit_to_kelvin()
+    elif conversion == 6:
+        kelvin_to_fahrenheit()
+    else:
+        raise Exception('Invalid value entered.')
