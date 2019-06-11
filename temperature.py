@@ -23,9 +23,27 @@ def celsius_to_kelvin():
 
     print(round(kelvin, 2))
 
+
 def kelvin_to_celsius():
     
     kelvin = float(input('Enter an amount in Kelvin to be converted to celsius: '))
     celsius = kelvin - 273.15
 
     print(round(celsius, 2))
+
+
+def fahrenheit_to_kelvin():
+
+    fahrenheit = float(input('Enter an amount in Kelvin to be converted to fahrenheit: '))
+    kelvin = fahrenheit - 32 / 1.80 + 273.15
+
+    print(round(kelvin, 2))
+
+
+def kelvin_to_fahrenheit():
+
+    kelvin = float(input('Enter an amount in fahrenheit to be converted to Kelvin: '))
+    fahrenheit = (kelvin - 273.15) * 1.80 + 32
+
+    print(round(fahrenheit, 2))
+
