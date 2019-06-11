@@ -24,12 +24,18 @@ from dosimetry import(
     sieverts_to_rems,
     dosimetry_choices
 )
+from astro import(
+    kilometers_to_au,
+    au_to_kilometers,
+    astro_choices
+)
 
 options = {
     '1': 'Temperature Conversions',
     '2': 'Mass Conversions',
     '3': 'Length Conversions',
-    '4': 'Dosimetry Conversions'
+    '4': 'Dosimetry Conversions',
+    '5': 'Astronomical Conversions'
 }
 
 
@@ -53,5 +59,7 @@ if __name__ == "__main__":
         length_choices()
     elif conversion == 4:
         dosimetry_choices()
+    elif conversion == 5:
+        astro_choices()
     else:
         raise Exception('Invalid value entered.')
