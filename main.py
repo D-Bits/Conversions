@@ -16,6 +16,10 @@ from mass import(
     pounds_to_kilograms,
     kilograms_to_pounds
 )
+from dosimetry import(
+    rems_to_sieverts,
+    sieverts_to_rems
+)
 
 options = {
     '1': 'Fahrenheit to Celsius',
@@ -29,12 +33,16 @@ options = {
     '9': 'Miles to Kilometers',
     '10': 'Kilometers to Miles',
     '11': 'Pounds to Kilograms',
-    '12': 'Kilograms to Pounds'
+    '12': 'Kilograms to Pounds',
+    '13': 'Rems to Sieverts',
+    '14': 'Sieverts to Rems'
 }
 
 
 if __name__ == "__main__":
     
+    print()
+
     for key, val in options.items():
         
         print(key, val)
@@ -67,5 +75,9 @@ if __name__ == "__main__":
         pounds_to_kilograms()
     elif conversion == 12:
         kilograms_to_pounds()
+    elif conversion == 13:
+        rems_to_sieverts()
+    elif conversion == 14:
+        sieverts_to_rems()
     else:
         raise Exception('Invalid value entered.')
