@@ -10,32 +10,36 @@ def feet_to_meters():
 
     feet = float(input('Enter an amount of feet to be converted into meters: '))
     meters = feet / 3.2808
+    rounded = round(meters, 2)
 
-    print(round(meters, 2))
+    print(f'{feet} ft equals {rounded} m.')
 
 
 def meters_to_feet():
 
     meters = float(input('Enter an amount of meters to be converted into feet: '))
     feet = meters * 3.2808
+    rounded = round(feet, 2)
 
-    print(round(feet, 2))
+    print(f'{meters} m equals {rounded} ft.')
 
 
 def miles_to_kilometers():
 
     miles = float(input('Enter an amount of miles to be converted to kilometers: '))
     kilometers = miles / 0.62137
+    rounded = round(kilometers, 2)
 
-    print(round(kilometers, 2))
+    print(f'{miles} mi equals {rounded} kms.')
 
 
 def kilometers_to_miles():
 
     kilos = float(input('Enter an amount of kilometers to be converted to miles: '))
     miles = kilos * 0.62137
+    rounded = round(miles, 2)
 
-    print(round(miles, 2))
+    print(f'{kilos} kms equals {rounded} mi.')
 
 
 def length_choices():
