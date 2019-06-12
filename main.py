@@ -2,7 +2,7 @@ from temperature import temp_choices
 from lengths import length_choices
 from mass import mass_choices
 from dosimetry import dosimetry_choices
-from astro import astro_choices
+from astronomy import astro_choices
 
 
 options = {
