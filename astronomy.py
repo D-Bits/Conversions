@@ -79,6 +79,22 @@ def ly_to_miles():
     print(round(ly, 2))
 
 
+def parsecs_to_ly():
+
+    parsecs = float(input('Enter an amount in parsecs to be converted to light years: '))
+    ly = parsecs * 3.26
+
+    print(round(ly, 2))
+
+
+def ly_to_parsecs():
+
+    ly = float(input('Enter an amount in light years to be converted to parsecs: '))
+    parsecs = ly / 3.26
+
+    print(round(parsecs, 2))
+
+
 def astro_choices():
 
     print()
@@ -107,5 +123,9 @@ def astro_choices():
         miles_to_ly()
     elif conversion == 8:
         ly_to_miles()
+    elif conversion == 9:
+        parsecs_to_ly()
+    elif conversion == 10:
+        ly_to_parsecs()
     else:
         raise Exception('Invalid value entered.')
