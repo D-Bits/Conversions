@@ -21,68 +21,79 @@ def kilometers_to_au():
 
     kilos = float(input('Enter an amount in kilometers to be converted to astronomical units (AU): '))
     au = kilos / 149597900
+    rounded = round(au, 2)
 
-    print(round(au, 2))
+    print(f'{kilos} kms equals {rounded} AU.')
 
 
 def au_to_kilometers():
 
     au = float(input('Enter an amount in astronomical units (AU) to be converted to kilometers: '))
     kilos = au * 149597900
+    rounded = round(kilos, 2)
 
-    print(round(kilos, 2))
+    print(f'{au} AU equals {rounded} kms.')
 
 
 def miles_to_au():
 
     miles = float(input('Enter an amount in miles to be converted to astronomical units (AU): '))
     au = miles / 92955825.9
+    rounded = round(au, 2)
 
-    print(round(au, 2))
+    print(f'{miles} miles equals {rounded} AU')
 
 
 def au_to_miles():
 
     au = float(input('Enter an amount in astronomical units (AU) to be converted to miles: '))
     miles = au * 92955825.9
+    rounded = round(miles, 2)
 
-    print(round(miles, 2))
+    print(f'{au} AU equals {miles} mi.')
 
 
 def kilometers_to_ly():
 
     kilos = float(input('Enter an amount in kilometers to be converted to light years (LY): '))
     ly = kilos / 9460730000000
+    rounded = round(ly, 2)
 
-    print(round(ly, 2))
+    print(f'{kilos} kms equals {rounded} lys.')
 
 
 def ly_to_kilometers():
 
     ly = float(input('Enter an amount in kilometers to be converted to light years (LY): '))
     kilos = ly * 9460730000000
+    rounded = round(kilos, 2)
+
+    print(f'{ly} ly equals {rounded} kms.')
 
 
 def miles_to_ly():
 
     miles = float(input('Enter an amount in miles to be converted to light years (LY): '))
     ly= miles / 5878625000000
+    rounded = round(ly, 2)
 
-    print(round(ly, 2))
+    print(f'{miles} mi equals {rounded} ly')
 
 
 def ly_to_miles():
 
     ly = float(input('Enter an amount in light years to be converted to miles: '))
-    miles= ly * 5878625000000
+    miles = ly * 5878625000000
+    rounded = round(miles, 2)
 
-    print(round(ly, 2))
+    print(f'{ly} ly equals {rounded} mi.')
 
 
 def parsecs_to_ly():
 
     parsecs = float(input('Enter an amount in parsecs to be converted to light years: '))
     ly = parsecs * 3.26
+    rounded = round(ly, 2)
 
     print(round(ly, 2))
 
@@ -108,9 +119,9 @@ def astro_choices():
     print()
 
     if conversion == 1:
-        kilometers_to_au
+        kilometers_to_au()
     elif conversion == 2:
-        au_to_kilometers
+        au_to_kilometers()
     elif conversion == 3:
         miles_to_au()
     elif conversion == 4:

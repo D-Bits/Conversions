@@ -8,6 +8,7 @@ temp_options = {
     '6': 'Kelvin to Fahrenheit',
 }
 
+
 def fahrenheit_to_celsius():
 
     fahrenheit = float(input('Enter an amount in fahrenheit to be converted to celsius: '))
