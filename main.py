@@ -1,34 +1,9 @@
-from temperature import(
-    temp_choices,
-    fahrenheit_to_celsius, 
-    celsius_to_fahrenheit, 
-    celsius_to_kelvin, 
-    kelvin_to_celsius,
-    fahrenheit_to_kelvin,
-    kelvin_to_fahrenheit
-)
-from lengths import( 
-    feet_to_meters, 
-    meters_to_feet, 
-    miles_to_kilometers, 
-    kilometers_to_miles,
-    length_choices
-)
-from mass import(
-    pounds_to_kilograms,
-    kilograms_to_pounds,
-    mass_choices
-)
-from dosimetry import(
-    rems_to_sieverts,
-    sieverts_to_rems,
-    dosimetry_choices
-)
-from astro import(
-    kilometers_to_au,
-    au_to_kilometers,
-    astro_choices
-)
+from temperature import temp_choices
+from lengths import length_choices
+from mass import mass_choices
+from dosimetry import dosimetry_choices
+from astro import astro_choices
+
 
 options = {
     '1': 'Temperature Conversions',

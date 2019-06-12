@@ -71,6 +71,14 @@ def miles_to_ly():
     print(round(ly, 2))
 
 
+def ly_to_miles():
+
+    ly = float(input('Enter an amount in light years to be converted to miles: '))
+    miles= ly * 5878625000000
+
+    print(round(ly, 2))
+
+
 def astro_choices():
 
     print()
@@ -95,5 +103,9 @@ def astro_choices():
         kilometers_to_ly()
     elif conversion == 6:
         ly_to_kilometers()
+    elif conversion == 7:
+        miles_to_ly()
+    elif conversion == 8:
+        ly_to_miles()
     else:
         raise Exception('Invalid value entered.')
