@@ -9,16 +9,18 @@ def pounds_to_kilograms():
 
     pounds = float(input('Enter an amount in pounds to be converted to kilos: '))
     kilos = pounds / 2.2046
+    rounded = round(kilos, 2)
 
-    print(round(kilos, 2))
+    print(f'{pounds} lbs equals {rounded} kgs.')
 
 
 def kilograms_to_pounds():
 
     kilos = float(input('Enter an amount in pounds to be converted to kilos: '))
     pounds = kilos * 2.2046
+    rounded = round(pounds, 2)
 
-    print(round(pounds, 2))
+    print(f'{kilos} kgs equals {rounded} lbs.')
 
 
 def mass_choices():

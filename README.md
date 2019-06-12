@@ -7,7 +7,11 @@ A collection of programs to convert various units of measurement.
 * mass.py: Mass conversions (pounds, kilograms, etc).
 * dosimetry.py: Ionizing radiation conversions (Rems, Sieverts, etc)
 * temperature.py: Temperature conversions (Celsius, Fahrenheit, Kelvin)
-* astro.py: Astronomical conversions (Metric, imperial, light years, AU, parsecs)
+* astronomy.py: Astronomical conversions (Metric, imperial, light years, AU, parsecs)
+
+## Requirements
+
+* Python 3.6
 
 ## Execution
 
