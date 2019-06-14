@@ -106,6 +106,7 @@ def ly_to_parsecs():
     print(round(parsecs, 2))
 
 
+# Display the available unit conversions, prompt the user to choose
 def astro_choices():
 
     print()

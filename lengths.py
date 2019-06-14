@@ -42,6 +42,7 @@ def kilometers_to_miles():
     print(f'{kilos} kms equals {rounded} mi.')
 
 
+# Display the available unit conversions, prompt the user to choose
 def length_choices():
 
     print()

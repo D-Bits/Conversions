@@ -63,6 +63,7 @@ def kelvin_to_fahrenheit():
     print(f'{kelvin} degrees K equals {rounded} degrees F.')
 
 
+# Display the available unit conversions, prompt the user to choose
 def temp_choices():
 
     print()
