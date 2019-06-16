@@ -1,5 +1,5 @@
 """
-A list of parameterized temperature conversions,
+A list of parameterized mass conversions,
 for unit testing purposes
 """
 
