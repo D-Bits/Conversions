@@ -16,7 +16,7 @@ def pounds_to_kilograms():
 
 def kilograms_to_pounds():
 
-    kilos = float(input('Enter an amount in pounds to be converted to kilos: '))
+    kilos = float(input('Enter an amount in kilograms to be converted to pounds: '))
     pounds = kilos * 2.2046
     rounded = round(pounds, 2)
 
