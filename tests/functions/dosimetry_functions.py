@@ -29,4 +29,4 @@ def grays_to_rads(grays):
 
     rads = grays * 100
 
-    return round(grays, 2)
+    return round(rads, 2)
