@@ -1,5 +1,5 @@
 from unittest import TestCase
-from tests.volume_functions import litres_to_gallons, gallons_to_litres
+from tests.functions.volume_functions import litres_to_gallons, gallons_to_litres
 
 
 class VolumeTests(TestCase):

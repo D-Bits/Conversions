@@ -1,5 +1,5 @@
 from unittest import TestCase
-from tests.mass_functions import pounds_to_kilograms, kilograms_to_pounds
+from tests.functions.mass_functions import pounds_to_kilograms, kilograms_to_pounds
 
 
 class MassTests(TestCase):
