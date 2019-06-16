@@ -9,7 +9,7 @@ class MassTests(TestCase):
 
         self.assertEqual(pounds_to_kilograms(1), 0.45)
 
-
+    # Ensure that 1 kg equals 2.2 lbs
     def test_kilos_to_pounds(self):
 
         self.assertEqual(kilograms_to_pounds(1), 2.2)
