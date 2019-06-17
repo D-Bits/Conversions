@@ -64,4 +64,4 @@ class AstronomyTests(TestCase):
     # Test that 1 ly = 0.3066 pc
     def test_ly_to_parsecs(self):
 
-        self.assertAlmostEqual(ly_to_parsecs(1), 0.3066)
+        self.assertAlmostEqual(ly_to_parsecs(1), 0.30660174)
