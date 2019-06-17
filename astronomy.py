@@ -64,7 +64,7 @@ def kilometers_to_ly():
 
 def ly_to_kilometers():
 
-    ly = float(input('Enter an amount in kilometers to be converted to light years (LY): '))
+    ly = float(input('Enter an amount in light years (LY) to be converted to kilometers: '))
     kilos = ly * 9460730000000
     rounded = round(kilos, 2)
 
