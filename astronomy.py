@@ -92,7 +92,7 @@ def ly_to_miles():
 def parsecs_to_ly():
 
     parsecs = float(input('Enter an amount in parsecs to be converted to light years: '))
-    ly = parsecs * 3.26
+    ly = parsecs * 3.26156
     rounded = round(ly, 2)
 
     print(round(ly, 2))
@@ -101,7 +101,7 @@ def parsecs_to_ly():
 def ly_to_parsecs():
 
     ly = float(input('Enter an amount in light years to be converted to parsecs: '))
-    parsecs = ly / 3.26
+    parsecs = ly / 3.26156
 
     print(round(parsecs, 2))
 
