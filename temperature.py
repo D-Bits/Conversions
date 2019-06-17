@@ -12,7 +12,7 @@ temp_options = {
 def fahrenheit_to_celsius():
 
     fahrenheit = float(input('Enter an amount in fahrenheit to be converted to celsius: '))
-    celsius = fahrenheit - 32 / 1.80
+    celsius = (fahrenheit -32) / 1.80
     rounded = round(celsius, 2)
 
     print(f'{fahrenheit} degrees F equals {rounded} degrees C.')
@@ -47,8 +47,8 @@ def kelvin_to_celsius():
 
 def fahrenheit_to_kelvin():
 
-    fahrenheit = float(input('Enter an amount in Kelvin to be converted to fahrenheit: '))
-    kelvin = fahrenheit - 32 / 1.80 + 273.15
+    fahrenheit = float(input('Enter an amount in fahrenheit to be converted to Kelvin: '))
+    kelvin = ((fahrenheit - 32) / 1.80)+ 273.15
     rounded = round(kelvin, 2)
 
     print(f'{fahrenheit} degrees F equals {rounded} degrees K.')
