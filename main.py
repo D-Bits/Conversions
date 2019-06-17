@@ -4,6 +4,7 @@ from mass import mass_choices
 from dosimetry import dosimetry_choices
 from astronomy import astro_choices
 from volumes import volume_choices
+from planck_units import planck_choices
 
 
 options = {
@@ -12,7 +13,8 @@ options = {
     '3': 'Length Conversions',
     '4': 'Volume Conversions',
     '5': 'Dosimetry Conversions',
-    '6': 'Astronomical Conversions'
+    '6': 'Astronomical Conversions',
+    '7': 'Planck Unit Conversions'
 }
 
 
@@ -40,5 +42,7 @@ if __name__ == "__main__":
         dosimetry_choices()
     elif conversion == 6:
         astro_choices()
+    elif conversion == 7:
+        planck_choices()
     else:
         raise Exception('Invalid value entered.')
