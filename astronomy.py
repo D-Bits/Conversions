@@ -116,7 +116,7 @@ def astro_choices():
         print(key, val)
 
     print()
-    conversion = int(input('Enter one of the above integers to specify a length conversion: '))
+    conversion = int(input('Enter one of the above integers to specify a astronomical conversion: '))
     print()
 
     if conversion == 1:
