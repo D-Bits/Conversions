@@ -1,7 +1,7 @@
 
 # About
 
-A collection of programs to convert various units of measurement.
+A collection of programs to convert various units of measurement. Works offline.
 
 * lengths.py: Lengths conversions (kilometers, miles, etc).
 * mass.py: Mass conversions (pounds, kilograms, etc).
