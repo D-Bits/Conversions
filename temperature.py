@@ -8,6 +8,9 @@ temp_options = {
     '6': 'Kelvin to Fahrenheit',
 }
 
+"""
+Throw exception if input is < absolute zero
+"""
 
 def fahrenheit_to_celsius():
 
