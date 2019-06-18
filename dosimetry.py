@@ -14,6 +14,8 @@ dosimetry_options = {
 def rems_to_sieverts():
 
     rems = float(input('Enter an amount of Roentigen Equivalent Mans (rems) to be converted to Sieverts: '))
+    if rems == 0:
+        raise Exception('Cannot calculate zero value!')
     sieverts = rems / 100
     rounded = round(sieverts, 2)
 
@@ -23,6 +25,8 @@ def rems_to_sieverts():
 def sieverts_to_rems():
 
     sieverts = float(input('Enter an amount of Sieverts to be converted to Roentigen Equivalent Mans (rems): '))
+    if sieverts == 0:
+        raise Exception('Cannot calculate zero value!')
     rems = sieverts * 100
     rounded = round(rems, 2)
 
@@ -33,6 +37,8 @@ def sieverts_to_rems():
 def rads_to_grays():
 
     rads = float(input('Enter an amount of rads to be converted to grays: '))
+    if rads == 0:
+        raise Exception('Cannot calculate zero value!')
     grays = rads / 100
     rounded = round(grays, 2)
 
@@ -42,6 +48,8 @@ def rads_to_grays():
 def grays_to_rads():
 
     grays = float(input('Enter an amount of grays to be converted to rads: '))
+    if grays == 0:
+        raise Exception('Cannot calculate zero value!')
     rads = grays * 100
     rounded = round(rads, 2)
 

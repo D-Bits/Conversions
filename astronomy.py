@@ -20,6 +20,8 @@ astro_options = {
 def kilometers_to_au():
 
     kilos = float(input('Enter an amount in kilometers to be converted to astronomical units (AU): '))
+    if kilos == 0:
+        raise Exception('Cannot calculate zero value!')
     au = kilos / 149597900
     rounded = round(au, 2)
 
@@ -29,6 +31,8 @@ def kilometers_to_au():
 def au_to_kilometers():
 
     au = float(input('Enter an amount in astronomical units (AU) to be converted to kilometers: '))
+    if au == 0:
+        raise Exception('Cannot calculate zero value!')
     kilos = au * 149597900
     rounded = round(kilos, 2)
 
@@ -38,6 +42,8 @@ def au_to_kilometers():
 def miles_to_au():
 
     miles = float(input('Enter an amount in miles to be converted to astronomical units (AU): '))
+    if miles == 0:
+        raise Exception('Cannot calculate zero value!')
     au = miles / 92955825.9
     rounded = round(au, 2)
 
@@ -47,6 +53,8 @@ def miles_to_au():
 def au_to_miles():
 
     au = float(input('Enter an amount in astronomical units (AU) to be converted to miles: '))
+    if au == 0:
+        raise Exception('Cannot calculate zero value!')
     miles = au * 92955825.9
     rounded = round(miles, 2)
 
@@ -56,6 +64,8 @@ def au_to_miles():
 def kilometers_to_ly():
 
     kilos = float(input('Enter an amount in kilometers to be converted to light years (LY): '))
+    if kilos == 0:
+        raise Exception('Cannot calculate zero value!')
     ly = kilos / 9460730000000
     rounded = round(ly, 2)
 
@@ -65,6 +75,8 @@ def kilometers_to_ly():
 def ly_to_kilometers():
 
     ly = float(input('Enter an amount in light years (LY) to be converted to kilometers: '))
+    if ly == 0:
+        raise Exception('Cannot calculate zero value!')
     kilos = ly * 9460730000000
     rounded = round(kilos, 2)
 
@@ -74,6 +86,8 @@ def ly_to_kilometers():
 def miles_to_ly():
 
     miles = float(input('Enter an amount in miles to be converted to light years (LY): '))
+    if miles == 0:
+        raise Exception('Cannot calculate zero value!')
     ly= miles / 5878625000000
     rounded = round(ly, 2)
 
@@ -83,6 +97,8 @@ def miles_to_ly():
 def ly_to_miles():
 
     ly = float(input('Enter an amount in light years to be converted to miles: '))
+    if ly == 0:
+        raise Exception('Cannot calculate zero value!')
     miles = ly * 5878625000000
     rounded = round(miles, 2)
 
@@ -92,6 +108,8 @@ def ly_to_miles():
 def parsecs_to_ly():
 
     parsecs = float(input('Enter an amount in parsecs to be converted to light years: '))
+    if parsecs == 0:
+        raise Exception('Cannot calculate zero value!')
     ly = parsecs * 3.26156
     rounded = round(ly, 2)
 
@@ -101,6 +119,8 @@ def parsecs_to_ly():
 def ly_to_parsecs():
 
     ly = float(input('Enter an amount in light years to be converted to parsecs: '))
+    if ly == 0:
+        raise Exception('Cannot calculate zero value!')
     parsecs = ly / 3.26156
 
     print(round(parsecs, 2))

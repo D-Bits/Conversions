@@ -8,6 +8,8 @@ volume_options = {
 def litres_to_gallons():
 
     litres = float(input('Enter an amount in litres to be converted into gallons: '))
+    if litres == 0:
+        raise Exception('Cannot calculate zero value!')
     gallons = litres * 0.26417
     rounded = round(gallons, 2)
 
@@ -17,6 +19,8 @@ def litres_to_gallons():
 def gallons_to_litres():
 
     gallons = float(input('Enter an amount in gallons to be converted into litres: '))
+    if gallons == 0:
+        raise Exception('Cannot calculate zero value!')
     litres = gallons / 0.26417
     rounded = round(litres, 2)
 
@@ -25,7 +29,7 @@ def gallons_to_litres():
 
 # Display the available unit conversions, prompt the user to choose
 def volume_choices():
-
+ 
     print()
 
     for key, val in volume_options.items():
