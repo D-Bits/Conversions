@@ -113,7 +113,7 @@ def parsecs_to_ly():
     ly = parsecs * 3.26156
     rounded = round(ly, 2)
 
-    print(round(ly, 2))
+    print(f'{parsecs} pc equals {ly} ly.')
 
 
 def ly_to_parsecs():
