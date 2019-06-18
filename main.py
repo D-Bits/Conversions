@@ -6,7 +6,7 @@ from astronomy import astro_choices
 from volumes import volume_choices
 from planck_units import planck_choices
 
-
+# Conversion options
 options = {
     '1': 'Temperature Conversions',
     '2': 'Mass Conversions',

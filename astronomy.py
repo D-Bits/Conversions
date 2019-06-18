@@ -122,8 +122,9 @@ def ly_to_parsecs():
     if ly == 0:
         raise Exception('Cannot calculate zero value!')
     parsecs = ly / 3.26156
+    rounded = round(parsecs, 2)
 
-    print(round(parsecs, 2))
+    print(f'{ly} ly equals {rounded} pc.')
 
 
 # Display the available unit conversions, prompt the user to choose
