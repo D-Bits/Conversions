@@ -29,3 +29,6 @@ __pycache__/astro.cpython-36.pyc
 __pycache__/dosimetry.cpython-36.pyc
 __pycache__/mass.cpython-36.pyc
 __pycache__/temperature.cpython-36.pyc
+tests/functions/__pycache__/area_functions.cpython-36.pyc
+__pycache__/areas.cpython-36.pyc
+tests/__pycache__/test_areas.cpython-36.pyc
