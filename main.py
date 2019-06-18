@@ -3,6 +3,7 @@ from lengths import length_choices
 from mass import mass_choices
 from dosimetry import dosimetry_choices
 from astronomy import astro_choices
+from areas import area_choices
 from volumes import volume_choices
 from planck_units import planck_choices
 
@@ -12,9 +13,10 @@ options = {
     '2': 'Mass Conversions',
     '3': 'Length Conversions',
     '4': 'Volume Conversions',
-    '5': 'Dosimetry Conversions',
-    '6': 'Astronomical Conversions',
-    '7': 'Planck Unit Conversions'
+    '5': 'Area Conversions',
+    '6': 'Dosimetry Conversions',
+    '7': 'Astronomical Conversions',
+    '8': 'Planck Unit Conversions'
 }
 
 
@@ -39,10 +41,12 @@ if __name__ == "__main__":
     elif conversion == 4:
         volume_choices()
     elif conversion == 5:
-        dosimetry_choices()
+        area_choices()
     elif conversion == 6:
-        astro_choices()
+        dosimetry_choices()
     elif conversion == 7:
+        astro_choices()
+    elif conversion == 8:
         planck_choices()
     else:
         raise Exception('Invalid value entered.')
