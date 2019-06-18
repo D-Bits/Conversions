@@ -8,6 +8,8 @@ mass_options = {
 def pounds_to_kilograms():
 
     pounds = float(input('Enter an amount in pounds to be converted to kilos: '))
+    if pounds == 0:
+        raise Exception('Cannot calculate zero value!')
     kilos = pounds / 2.2046
     rounded = round(kilos, 2)
 
@@ -17,6 +19,8 @@ def pounds_to_kilograms():
 def kilograms_to_pounds():
 
     kilos = float(input('Enter an amount in kilograms to be converted to pounds: '))
+    if kilos == 0:
+        raise Exception('Cannot calculate zero value!')
     pounds = kilos * 2.2046
     rounded = round(pounds, 2)
 
