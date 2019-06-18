@@ -1,5 +1,10 @@
 from unittest import TestCase
-from tests.functions.mass_functions import pounds_to_kilograms, kilograms_to_pounds
+from tests.functions.mass_functions import(
+    pounds_to_kilograms,
+    kilograms_to_pounds,
+    ounces_to_grams,
+    grams_to_ounces
+) 
 
 
 class MassTests(TestCase):
@@ -13,3 +18,12 @@ class MassTests(TestCase):
     def test_kilos_to_pounds(self):
 
         self.assertAlmostEqual(kilograms_to_pounds(1), 2.2)
+
+    # Ensure that 1 oz equals 28.34 g
+    def test_ounces_to_grams(self):
+
+        self.assertAlmostEqual(ounces_to_grams(1),  28.34952)
+
+    def test_grams_to_ounces(self):
+
+        self.assertAlmostEqual(grams_to_ounces(1), 0.035274)
