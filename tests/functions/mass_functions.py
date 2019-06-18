@@ -16,3 +16,17 @@ def kilograms_to_pounds(kilos):
     pounds = kilos * 2.2046
 
     return round(pounds, 2)
+
+
+def ounces_to_grams(ounces):
+
+    grams = ounces / 0.035274
+
+    return round(grams, 2)
+
+
+def grams_to_ounces(grams):
+
+    ounces = grams * 0.035274
+
+    return round(ounces, 2)

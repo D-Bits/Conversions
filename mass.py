@@ -1,7 +1,8 @@
 
 mass_options = {
     '1': 'Pounds to Kilograms',
-    '2': 'Kilograms to Pounds'
+    '2': 'Kilograms to Pounds',
+    '3': 'Ounces to Grams.'
 }
 
 
@@ -27,6 +28,28 @@ def kilograms_to_pounds():
     print(f'{kilos} kgs equals {rounded} lbs.')
 
 
+def ounces_to_grams():
+
+    ounces = float(input('Enter an amount in ounces to be converted to grams: '))
+    if ounces == 0:
+        raise Exception('Cannot calculate zero value!')
+    grams = ounces / 0.035274
+    rounded = round(grams, 2)
+    
+    print(f'{ounces} oz. equals {rounded} g.')
+
+
+def grams_to_ounces():
+
+    grams = float(input('Enter an amount in grams to be converted to ounces: '))
+    if grams == 0:
+        raise Exception('Cannot calculate zero value!')
+    ounces = grams * 0.035274
+    rounded = round(grams, 2)
+    
+    print(f'{grams} g. equals {rounded} oz.')
+
+
 # Display the available unit conversions, prompt the user to choose
 def mass_choices():
 
@@ -44,5 +67,9 @@ def mass_choices():
         pounds_to_kilograms()
     elif conversion == 2:
         kilograms_to_pounds()
+    elif conversion == 3:
+        ounces_to_grams()
+    elif conversion == 4:
+        grams_to_ounces()
     else:
         raise Exception('Invalid value entered.')
