@@ -56,6 +56,8 @@ def au_to_miles(au):
 def kilometers_to_ly(kilos):
 
     ly = kilos / 9460730000000
+    if ly == 0:
+        raise Exception('Cannot calculate zero value!\n')
 
     return round(ly, 2)
 
@@ -63,6 +65,8 @@ def kilometers_to_ly(kilos):
 def ly_to_kilometers(ly):
 
     kilos = ly * 9460730000000
+    if kilos == 0:
+        raise Exception('Cannot calculate zero value!\n')
 
     return round(kilos, 2)
 
@@ -70,6 +74,8 @@ def ly_to_kilometers(ly):
 def miles_to_ly(miles):
 
     ly= miles / 5878625000000
+    if miles == 0:
+        raise Exception('Cannot calculate zero value!\n')
 
     return round(ly, 2)
 
@@ -77,6 +83,8 @@ def miles_to_ly(miles):
 def ly_to_miles(ly):
 
     miles = ly * 5878625000000
+    if ly == 0:
+        raise Exception('Cannot calculate zero value!\n')
 
     return round(miles, 2)
 
@@ -84,6 +92,8 @@ def ly_to_miles(ly):
 def parsecs_to_ly(parsecs):
 
     ly = parsecs *  3.26156
+    if parsecs == 0:
+        raise Exception('Cannot calculate zero value!\n')
 
     return round(ly, 2)
 
@@ -91,6 +101,8 @@ def parsecs_to_ly(parsecs):
 def ly_to_parsecs(ly):
 
     parsecs = ly /  3.26156
+    if ly == 0:
+        raise Exception('Cannot calculate zero value!\n')
 
     return parsecs
 
