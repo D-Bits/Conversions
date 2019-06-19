@@ -138,7 +138,7 @@ def astro_choices():
         print(key, val)
 
     print()
-    conversion = int(input('Enter one of the above integers to specify a astronomical conversion: \n'))
+    conversion = int(input('Enter one of the above integers to specify a astronomical conversion: '))
 
     if conversion == 1:
         kilometers_to_au()

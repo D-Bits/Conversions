@@ -7,6 +7,7 @@ from areas import area_choices
 from volumes import volume_choices
 from planck_units import planck_choices
 
+
 # Conversion options
 options = {
     '1': 'Temperature Conversions',
@@ -30,7 +31,6 @@ if __name__ == "__main__":
 
     print() # Prompt the user to choose a unit conversion category
     conversion = int(input('Enter one of the above integers to specify a category: '))
-    # print()
 
     if conversion == 1:
         temp_choices()

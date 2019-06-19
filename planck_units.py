@@ -4,8 +4,10 @@ Conversions for Planck units to metric units.
 
 planck_options ={
     '1': 'Meters to Planck lengths.',
-    '2': 'Planck lengths to meters.'
+    '2': 'Planck lengths to meters.',
+    '3': 'Light years to Planck Lengths.'
 }
+
 
 def meters_to_planck_lengths():
 
@@ -26,6 +28,16 @@ def planck_lengths_to_meters():
     print(f'{pl} Planck lengths equals {meters} meters.\n')
 
 
+# Light years to Planck lengths 
+def ly_to_pl():
+
+    ly = float(input('Enter an amount of light years to be converted to Planck lengths: '))
+    conversion = (1.61605 * 10**-35) * 9460730000000000
+    plankc_lengths = conversion * ly
+
+    print(f'{ly} ly equals {plankc_lengths} Planck lengths.')
+
+
 # Display availble conversion options, and prompt the user to choose
 def planck_choices():
 
@@ -43,5 +55,7 @@ def planck_choices():
         meters_to_planck_lengths()
     elif conversion == 2:
         planck_lengths_to_meters()
+    elif conversion == 3:
+        ly_to_pl()
     else:
         raise Exception('Invalid value entered.')
