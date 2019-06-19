@@ -1,11 +1,10 @@
 from unittest import TestCase
-from tests.functions.area_functions import(
+from area import(
     acres_to_sqft,
     sqft_to_acres,
     acres_to_hectares,
     hectares_to_acres
 )
-
 
 
 # Unit tests for area conversions

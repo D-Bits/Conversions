@@ -12,70 +12,54 @@ temp_options = {
 Throw exception if input is < absolute zero
 """
 
-def fahrenheit_to_celsius():
+def fahrenheit_to_celsius(fahrenheit):
 
-    fahrenheit = float(input('Enter an amount in fahrenheit to be converted to celsius: '))
     if fahrenheit < -459.67:
         raise Exception('Cannot be below absolute zero!\n')
     celsius = (fahrenheit -32) / 1.80
-    rounded = round(celsius, 2)
 
-    print(f'{fahrenheit} degrees F equals {rounded} degrees C.\n')
+    return round(celsius, 2)
 
 
-def celsius_to_fahrenheit():
+def celsius_to_fahrenheit(celsius):
 
-    celsius = float(input('Enter an amount in celsius to be converted to fahrenheit: '))
-    if celsius < -273.15:
-        raise Exception('Cannot be below absolute zero!\n')
     fahrenheit = celsius * 1.80 + 32.00
-    rounded = round(fahrenheit, 2)
-
-    print(f'{celsius} degrees C equals {rounded} degrees F.\n')
-    
-
-def celsius_to_kelvin():
-    
-    celsius = float(input('Enter an amount in celsius to be converted to Kelvin: '))
     if celsius < -273.15:
         raise Exception('Cannot be below absolute zero!\n')
+
+    return round(fahrenheit, 2)
+
+
+def celsius_to_kelvin(celsius):
+
     kelvin = celsius + 273.15
-    rounded = round(kelvin, 2)
-
-    print(f'{celsius} degrees C equals {rounded} K.\n')
-
-
-def kelvin_to_celsius():
-    
-    kelvin = float(input('Enter an amount in Kelvin to be converted to celsius: '))
-    if kelvin < 0:
+    if celsius < -273.15:
         raise Exception('Cannot be below absolute zero!\n')
+
+    return round(kelvin, 2)
+
+
+def kelvin_to_celsius(kelvin):
+
     celsius = kelvin - 273.15
-    rounded = round(celsius, 2)
-
-    print(f'{kelvin} degrees K equals {rounded} degrees C.\n')
-
-
-def fahrenheit_to_kelvin():
-
-    fahrenheit = float(input('Enter an amount in fahrenheit to be converted to Kelvin: '))
-    if fahrenheit < -459.67:
-        raise Exception('Cannot be below absolute zero!\n')
-    kelvin = ((fahrenheit - 32) / 1.80)+ 273.15
-    rounded = round(kelvin, 2)
-
-    print(f'{fahrenheit} degrees F equals {rounded} degrees K.\n')
-
-
-def kelvin_to_fahrenheit():
-
-    kelvin = float(input('Enter an amount in fahrenheit to be converted to Kelvin: '))
     if kelvin < 0:
         raise Exception('Cannot be below absolute zero!\n')
-    fahrenheit = (kelvin - 273.15) * 1.80 + 32
-    rounded = round(fahrenheit, 2)
 
-    print(f'{kelvin} degrees K equals {rounded} degrees F.\n')
+    return round(celsius, 2)
+
+
+def fahrenheit_to_kelvin(fahrenheit):
+
+    kelvin = ((fahrenheit - 32) / 1.80)+ 273.15
+
+    return round(kelvin, 2)
+
+
+def kelvin_to_fahrenheit(kelvin):
+
+    fahrenheit = (kelvin - 273.15) * 1.80 + 32
+
+    return round(fahrenheit, 2)
 
 
 # Display the available unit conversions, prompt the user to choose
@@ -92,16 +76,22 @@ def temp_choices():
     print()
 
     if conversion == 1:
-        fahrenheit_to_celsius()
+        user_fahrenheit = float(input('Enter an amount in fahrenheit to be converted to celsius: '))
+        print(f'{user_fahrenheit} degrees F equals {fahrenheit_to_celsius(user_fahrenheit)} degrees C.\n')
     elif conversion == 2:
-        celsius_to_fahrenheit()
+        user_celsius = float(input('Enter an amount in celsius to be converted to fahrenheit: '))
+        print(f'{user_celsius} degrees C equals {celsius_to_fahrenheit(user_celsius)} degrees F.\n')
     elif conversion == 3:
-        celsius_to_kelvin()
+        user_celsius = float(input('Enter an amount in celsius to be converted to Kelvin: '))
+        print(f'{user_celsius} degrees C equals {celsius_to_kelvin} K.\n')
     elif conversion == 4:
-        kelvin_to_celsius()
+        user_kelvin = float(input('Enter an amount in Kelvin to be converted to celsius: '))
+        print(f'{user_kelvin} degrees K equals {kelvin_to_celsius(user_kelvin)} degrees C.\n')
     elif conversion == 5:
-        fahrenheit_to_kelvin()
+        user_fahrenheit = float(input('Enter an amount in fahrenheit to be converted to Kelvin: '))
+        print(f'{user_fahrenheit} degrees F equals {fahrenheit_to_kelvin(user_fahrenheit)} degrees K.\n')
     elif conversion == 6:
-        kelvin_to_fahrenheit()
+        user_kelvin = float(input('Enter an amount in fahrenheit to be converted to Kelvin: '))
+        print(f'{user_kelvin} degrees K equals {kelvin_to_fahrenheit(user_kelvin)} degrees F.\n')
     else:
         raise Exception('Invalid value entered.\n')

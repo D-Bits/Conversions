@@ -1,5 +1,5 @@
 from unittest import TestCase
-from tests.functions.planck_functions import(
+from planck_units import(
     meters_to_planck_lengths,
     planck_lengths_to_meters
 )

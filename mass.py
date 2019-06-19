@@ -2,52 +2,37 @@
 mass_options = {
     '1': 'Pounds to Kilograms',
     '2': 'Kilograms to Pounds',
-    '3': 'Ounces to Grams.'
+    '3': 'Ounces to Grams.',
+    '4': 'Grams to Ounces.'
 }
 
 
-def pounds_to_kilograms():
+def pounds_to_kilograms(pounds):
 
-    pounds = float(input('Enter an amount in pounds to be converted to kilos: '))
-    if pounds == 0:
-        raise Exception('Cannot calculate zero value!')
     kilos = pounds / 2.2046
-    rounded = round(kilos, 2)
 
-    print(f'{pounds} lbs equals {rounded} kgs.')
+    return round(kilos, 2)
 
 
-def kilograms_to_pounds():
+def kilograms_to_pounds(kilos):
 
-    kilos = float(input('Enter an amount in kilograms to be converted to pounds: '))
-    if kilos == 0:
-        raise Exception('Cannot calculate zero value!')
     pounds = kilos * 2.2046
-    rounded = round(pounds, 2)
 
-    print(f'{kilos} kgs equals {rounded} lbs.')
-
-
-def ounces_to_grams():
-
-    ounces = float(input('Enter an amount in ounces to be converted to grams: '))
-    if ounces == 0:
-        raise Exception('Cannot calculate zero value!\n')
-    grams = ounces / 0.035274
-    rounded = round(grams, 2)
-    
-    print(f'{ounces} oz. equals {rounded} g.\n')
+    return round(pounds, 2)
 
 
-def grams_to_ounces():
+def ounces_to_grams(ounces):
 
-    grams = float(input('Enter an amount in grams to be converted to ounces: '))
-    if grams == 0:
-        raise Exception('Cannot calculate zero value!\n')
+    grams = (ounces / 0.035274)
+
+    return grams
+
+
+def grams_to_ounces(grams):
+
     ounces = grams * 0.035274
-    rounded = round(grams, 2)
-    
-    print(f'{grams} g. equals {rounded} oz.\n')
+
+    return ounces
 
 
 # Display the available unit conversions, prompt the user to choose
@@ -64,12 +49,16 @@ def mass_choices():
     print()
 
     if conversion == 1:
-        pounds_to_kilograms()
+        user_lbs = float(input('Enter an amount in pounds to be converted to kilos: '))
+        print(f'{user_lbs}lbs equals {pounds_to_kilograms(user_lbs)}kgs.')
     elif conversion == 2:
-        kilograms_to_pounds()
+        user_kilos = float(input('Enter an amount in kilograms to be converted to pounds: '))
+        print(f'{user_kilos}kgs equals {kilograms_to_pounds(user_kilos)}lbs.')
     elif conversion == 3:
-        ounces_to_grams()
+        user_oz = float(input('Enter an amount in ounces to be converted to grams: '))
+        print(f'{user_oz}oz. equals {ounces_to_grams(user_oz)}g.\n')
     elif conversion == 4:
-        grams_to_ounces()
+        user_g = float(input('Enter an amount in grams to be converted to ounces: '))
+        print(f'{user_g} g. equals {grams_to_ounces(user_g)} oz.\n')
     else:
         raise Exception('Invalid value entered.\n')

@@ -6,51 +6,34 @@ length_options = {
     '4': 'Kilometers to Miles'
 }
 
-def feet_to_meters():
+def feet_to_meters(feet):
 
-    feet = float(input('Enter an amount of feet to be converted into meters: '))
-    if feet == 0:
-        raise Exception('Cannot calculate zero value!\n')
     meters = feet / 3.2808
-    rounded = round(meters, 2)
 
-    print(f'{feet} ft equals {rounded} m.\n')
+    return round(meters, 2)
 
 
-def meters_to_feet():
+def meters_to_feet(meters):
 
-    meters = float(input('Enter an amount of meters to be converted into feet: '))
-    if meters == 0:
-        raise Exception('Cannot calculate zero value!\n')
     feet = meters * 3.2808
-    rounded = round(feet, 2)
 
-    print(f'{meters} m equals {rounded} ft.\n')
-
-
-def miles_to_kilometers():
-
-    miles = float(input('Enter an amount of miles to be converted to kilometers: '))
-    if miles == 0:
-        raise Exception('Cannot calculate zero value!\n')
-    kilometers = miles / 0.62137
-    rounded = round(kilometers, 2)
-
-    print(f'{miles} mi equals {rounded} kms.\n')
+    return round(feet, 2)
 
 
-def kilometers_to_miles():
+def miles_to_kilos(miles):
 
-    kilos = float(input('Enter an amount of kilometers to be converted to miles: '))
-    if kilos == 0:
-        raise Exception('Cannot calculate zero value!\n')
+    kilos = miles / 0.62137
+
+    return round(kilos, 2)
+
+
+def kilos_to_miles(kilos):
+
     miles = kilos * 0.62137
-    rounded = round(miles, 2)
 
-    print(f'{kilos} kms equals {rounded} mi.\n')
+    return round(miles, 2)
 
 
-# Display the available unit conversions, prompt the user to choose
 def length_choices():
 
     print()
@@ -63,12 +46,16 @@ def length_choices():
     conversion = int(input('Enter one of the above integers to specify a length conversion: '))
 
     if conversion == 1:
-        feet_to_meters()
+        user_feet = float(input('Enter an amount of feet to be converted into meters: '))
+        print(f'{user_feet} ft equals {feet_to_meters(user_feet)} m.\n')
     elif conversion == 2:
-        meters_to_feet()
+        user_meters = float(input('Enter an amount of meters to be converted into feet: '))
+        print(f'{user_meters} m equals {meters_to_feet(user_meters)} ft.\n')
     elif conversion == 3:
-        miles_to_kilometers()
+        user_miles = float(input('Enter an amount of miles to be converted to kilometers: '))
+        print(f'{user_miles} mi equals {miles_to_kilos(user_miles)} kms.\n')
     elif conversion == 4:
-        kilometers_to_miles()
+        user_kilos = float(input('Enter an amount of kilometers to be converted to miles: '))
+        print(f'{user_kilos} kms equals {kilos_to_miles(user_kilos)} mi.\n')
     else:
         raise Exception('Invalid value entered.')

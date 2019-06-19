@@ -10,53 +10,34 @@ dosimetry_options = {
     '4': 'Grays to Rads'
 }
 
-# Rems and Sieverts both measure doseage equivalents
-def rems_to_sieverts():
+def rems_to_sieverts(rems):
 
-    rems = float(input('Enter an amount of Roentigen Equivalent Mans (rems) to be converted to Sieverts: '))
-    if rems == 0:
-        raise Exception('Cannot calculate zero value!\n')
     sieverts = rems / 100
-    rounded = round(sieverts, 2)
 
-    print(f'{rems} rems equals {rounded} Sv.\n')
+    return round(sieverts, 2)
 
 
-def sieverts_to_rems():
+def sieverts_to_rems(sieverts):
 
-    sieverts = float(input('Enter an amount of Sieverts to be converted to Roentigen Equivalent Mans (rems): '))
-    if sieverts == 0:
-        raise Exception('Cannot calculate zero value!')
     rems = sieverts * 100
-    rounded = round(rems, 2)
 
-    print(f'{sieverts} Sv equals {rounded} rems.\n')
-
-
-# Grays and rads measure Absorbed doses
-def rads_to_grays():
-
-    rads = float(input('Enter an amount of rads to be converted to grays: '))
-    if rads == 0:
-        raise Exception('Cannot calculate zero value!\n')
-    grays = rads / 100
-    rounded = round(grays, 2)
-
-    print(f'{rads} rads equals {rounded} grays.\n')
+    return round(rems, 2)
 
 
-def grays_to_rads():
+def rads_to_grays(rads):
 
-    grays = float(input('Enter an amount of grays to be converted to rads: '))
-    if grays == 0:
-        raise Exception('Cannot calculate zero value!\n')
+    grays = rads /100
+
+    return round(grays, 2) 
+    
+
+def grays_to_rads(grays):
+
     rads = grays * 100
-    rounded = round(rads, 2)
 
-    print(f'{grays} grays equals {rounded} rads.\n')
+    return round(rads, 2)
 
 
-# Display the available unit conversions, prompt the user to choose
 def dosimetry_choices():
 
     print()
@@ -69,12 +50,16 @@ def dosimetry_choices():
     conversion = int(input('Enter one of the above integers to specify a dosimetry conversion: '))
 
     if conversion == 1:
-        rems_to_sieverts()
+        user_rems = float(input('Enter an amount of Roentigen Equivalent Mans (rems) to be converted to Sieverts: '))
+        print(f'{user_rems} rems equals {rems_to_sieverts(user_rems)} Sv.\n')
     elif conversion == 2:
-        sieverts_to_rems()
+        user_sv = float(input('Enter an amount of Sieverts to be converted to Roentigen Equivalent Mans (rems): '))
+        print(f'{user_sv} Sv equals {sieverts_to_rems(user_sv)} rems.\n')
     elif conversion == 3:
-        rads_to_grays()
+        user_rads = float(input('Enter an amount of rads to be converted to grays: '))
+        print(f'{user_rads} rads equals {rads_to_grays(user_rads)} grays.\n')
     elif conversion == 4:
-        grays_to_rads()
+        user_grays = float(input('Enter an amount of grays to be converted to rads: '))
+        print(f'{user_grays} grays equals {grays_to_rads(user_grays)} rads.\n')
     else:
         raise Exception('Invalid value entered.\n')

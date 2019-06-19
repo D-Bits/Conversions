@@ -3,7 +3,7 @@ from lengths import length_choices
 from mass import mass_choices
 from dosimetry import dosimetry_choices
 from astronomy import astro_choices
-from areas import area_choices
+from area import area_choices
 from volumes import volume_choices
 from planck_units import planck_choices
 

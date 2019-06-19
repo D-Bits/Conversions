@@ -1,5 +1,5 @@
 from unittest import TestCase
-from tests.functions.temp_functions import(
+from temperature import(
     fahrenheit_to_celsius,
     celsius_to_fahrenheit,
     celsius_to_kelvin,

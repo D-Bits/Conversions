@@ -1,5 +1,5 @@
 from unittest import TestCase
-from tests.functions.astro_functions import(
+from astronomy import(
     kilometers_to_au,
     au_to_kilometers,
     miles_to_au,
