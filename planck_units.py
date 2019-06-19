@@ -14,7 +14,7 @@ def meters_to_planck_lengths():
     planck_lengths = meters / conversion
     rounded = round(planck_lengths, 2)
 
-    print(f'{meters} meters equals {rounded} Planck lengths.')
+    print(f'{meters} meters equals {rounded} Planck lengths.\n')
 
 
 def planck_lengths_to_meters():
@@ -23,7 +23,7 @@ def planck_lengths_to_meters():
     conversion = 1.61605 * 10**-35
     meters = pl * conversion
 
-    print(f'{pl} Planck lengths equals {meters} meters.')
+    print(f'{pl} Planck lengths equals {meters} meters.\n')
 
 
 # Display availble conversion options, and prompt the user to choose

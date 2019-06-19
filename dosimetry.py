@@ -15,11 +15,11 @@ def rems_to_sieverts():
 
     rems = float(input('Enter an amount of Roentigen Equivalent Mans (rems) to be converted to Sieverts: '))
     if rems == 0:
-        raise Exception('Cannot calculate zero value!')
+        raise Exception('Cannot calculate zero value!\n')
     sieverts = rems / 100
     rounded = round(sieverts, 2)
 
-    print(f'{rems} rems equals {rounded} Sv.')
+    print(f'{rems} rems equals {rounded} Sv.\n')
 
 
 def sieverts_to_rems():
@@ -30,7 +30,7 @@ def sieverts_to_rems():
     rems = sieverts * 100
     rounded = round(rems, 2)
 
-    print(f'{sieverts} Sv equals {rounded} rems.')
+    print(f'{sieverts} Sv equals {rounded} rems.\n')
 
 
 # Grays and rads measure Absorbed doses
@@ -38,22 +38,22 @@ def rads_to_grays():
 
     rads = float(input('Enter an amount of rads to be converted to grays: '))
     if rads == 0:
-        raise Exception('Cannot calculate zero value!')
+        raise Exception('Cannot calculate zero value!\n')
     grays = rads / 100
     rounded = round(grays, 2)
 
-    print(f'{rads} rads equals {rounded} grays.')
+    print(f'{rads} rads equals {rounded} grays.\n')
 
 
 def grays_to_rads():
 
     grays = float(input('Enter an amount of grays to be converted to rads: '))
     if grays == 0:
-        raise Exception('Cannot calculate zero value!')
+        raise Exception('Cannot calculate zero value!\n')
     rads = grays * 100
     rounded = round(rads, 2)
 
-    print(f'{grays} grays equals {rounded} rads.')
+    print(f'{grays} grays equals {rounded} rads.\n')
 
 
 # Display the available unit conversions, prompt the user to choose
@@ -67,7 +67,6 @@ def dosimetry_choices():
 
     print()
     conversion = int(input('Enter one of the above integers to specify a dosimetry conversion: '))
-    print()
 
     if conversion == 1:
         rems_to_sieverts()
@@ -78,4 +77,4 @@ def dosimetry_choices():
     elif conversion == 4:
         grays_to_rads()
     else:
-        raise Exception('Invalid value entered.')
+        raise Exception('Invalid value entered.\n')
