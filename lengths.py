@@ -9,6 +9,8 @@ length_options = {
 def feet_to_meters(feet):
 
     meters = feet / 3.2808
+    if feet == 0:
+        raise Exception('Cannot calculate zero value!\n')
 
     return round(meters, 2)
 
@@ -16,6 +18,8 @@ def feet_to_meters(feet):
 def meters_to_feet(meters):
 
     feet = meters * 3.2808
+    if meters == 0:
+        raise Exception('Cannot calculate zero value!\n')
 
     return round(feet, 2)
 
@@ -23,6 +27,8 @@ def meters_to_feet(meters):
 def miles_to_kilos(miles):
 
     kilos = miles / 0.62137
+    if miles == 0:
+        raise Exception('Cannot calculate zero value!\n')
 
     return round(kilos, 2)
 
@@ -30,7 +36,9 @@ def miles_to_kilos(miles):
 def kilos_to_miles(kilos):
 
     miles = kilos * 0.62137
-
+    if kilos == 0:
+        raise Exception('Cannot calculate zero value!\n')
+            
     return round(miles, 2)
 
 

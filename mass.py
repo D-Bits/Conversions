@@ -10,6 +10,8 @@ mass_options = {
 def pounds_to_kilograms(pounds):
 
     kilos = pounds / 2.2046
+    if pounds == 0:
+        raise Exception('Cannot calculate zero value!\n')
 
     return round(kilos, 2)
 
@@ -17,6 +19,8 @@ def pounds_to_kilograms(pounds):
 def kilograms_to_pounds(kilos):
 
     pounds = kilos * 2.2046
+    if kilos == 0:
+        raise Exception('Cannot calculate zero value!\n')
 
     return round(pounds, 2)
 
@@ -24,6 +28,8 @@ def kilograms_to_pounds(kilos):
 def ounces_to_grams(ounces):
 
     grams = (ounces / 0.035274)
+    if ounces == 0:
+        raise Exception('Cannot calculate zero value!\n')
 
     return grams
 
@@ -31,7 +37,9 @@ def ounces_to_grams(ounces):
 def grams_to_ounces(grams):
 
     ounces = grams * 0.035274
-
+    if grams == 0:
+        raise Exception('Cannot calculate zero value!\n')
+            
     return ounces
 
 
