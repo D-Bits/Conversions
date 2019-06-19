@@ -43,7 +43,5 @@ def planck_choices():
     elif conversion == 2:
         user_lp = float(input('Enter an amount of Planck lengths to be converted into meters: '))
         print(f'{user_lp} Planck lengths equals {planck_lengths_to_meters(user_lp)} meters.\n')
-    elif conversion == 3:
-        ly_to_pl()
     else:
         raise Exception('Invalid value entered.')
