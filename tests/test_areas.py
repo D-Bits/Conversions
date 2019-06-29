@@ -14,7 +14,7 @@ class AreaTests(TestCase):
     def test_acres_to_sqft(self):
 
         self.assertAlmostEqual(acres_to_sqft(1), 43560)
-
+        
     # Test that 43,560 sq. ft. = 1 ac
     def test_sqft_to_acres(self):
 

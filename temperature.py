@@ -1,4 +1,3 @@
-
 temp_options = {
     '1': 'Fahrenheit to Celsius',
     '2': 'Celsius to Fahrenheit',
@@ -51,6 +50,8 @@ def kelvin_to_celsius(kelvin):
 def fahrenheit_to_kelvin(fahrenheit):
 
     kelvin = ((fahrenheit - 32) / 1.80)+ 273.15
+    if fahrenheit < -459.67:
+        raise Exception('Cannot be below absolute zero!\n')
 
     return round(kelvin, 2)
 
