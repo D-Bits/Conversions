@@ -78,7 +78,7 @@ def temp_choices():
 
     if conversion == 1:
         user_fahrenheit = float(input('Enter an amount in fahrenheit to be converted to celsius: '))
-        print(f'{user_fahrenheit} degrees F equals {fahrenheit_to_celsius(user_fahrenheit)} degrees C.\n')
+        print(f'{user_fahrenheit} degrees F equals {fahrenheit_to_celsius(user_fahrenheit)} degrees C.')
     elif conversion == 2:
         user_celsius = float(input('Enter an amount in celsius to be converted to fahrenheit: '))
         print(f'{user_celsius} degrees C equals {celsius_to_fahrenheit(user_celsius)} degrees F.\n')

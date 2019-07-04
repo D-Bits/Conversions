@@ -5,9 +5,9 @@ A collection of programs to convert various units of measurement. Works offline.
 
 * lengths.py: Lengths conversions (kilometers, miles, etc).
 * mass.py: Mass conversions (pounds, kilograms, etc).
-* dosimetry.py: Ionizing radiation conversions (Rems, Sieverts, etc)
-* temperature.py: Temperature conversions (Celsius, Fahrenheit, Kelvin)
-* astronomy.py: Astronomical conversions (Metric, imperial, light years, AU, parsecs)
+* dosimetry.py: Ionizing radiation conversions (Rems, Sieverts, etc).
+* temperature.py: Temperature conversions (Celsius, Fahrenheit, Kelvin).
+* astronomy.py: Astronomical conversions (Metric, imperial, light years, AU, parsecs).
 
 ## Requirements
 
