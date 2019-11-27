@@ -15,7 +15,7 @@ def meters_to_planck_lengths(meters):
     if meters == 0:
         raise Exception('Cannot calculate zero value!\n')
 
-    return planck_lengths
+    return round(planck_lengths, 2)
 
 
 def planck_lengths_to_meters(pl):

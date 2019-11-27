@@ -59,14 +59,18 @@ def dosimetry_choices():
     if conversion == 1:
         user_rems = float(input('Enter an amount of Roentigen Equivalent Mans (rems) to be converted to Sieverts: '))
         print(f'{user_rems} rems equals {rems_to_sieverts(user_rems)} Sv.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 2:
         user_sv = float(input('Enter an amount of Sieverts to be converted to Roentigen Equivalent Mans (rems): '))
         print(f'{user_sv} Sv equals {sieverts_to_rems(user_sv)} rems.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 3:
         user_rads = float(input('Enter an amount of rads to be converted to grays: '))
         print(f'{user_rads} rads equals {rads_to_grays(user_rads)} grays.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 4:
         user_grays = float(input('Enter an amount of grays to be converted to rads: '))
         print(f'{user_grays} grays equals {grays_to_rads(user_grays)} rads.\n')
+        input("Conversion complete. Press enter to exit.")
     else:
         raise Exception('Invalid value entered.\n')

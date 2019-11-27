@@ -59,14 +59,18 @@ def area_choices():
     if conversion == 1:
         user_acres = float(input('Enter an amount in acres to be converted into sq. ft.: '))
         print(f'{user_acres} ac equals {acres_to_sqft(user_acres)} sq. ft.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 2:
         user_sqft = float(input('Enter an amount in sq. ft. to be converted into acres: '))
         print(f'{user_sqft} sq. ft equals {sqft_to_acres(user_sqft)} acres.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 3:
         user_acres = float(input('Enter an amount in acres to be converted into hectares: '))
-        print(f'{user_acres} sq. ft equals {acres_to_hectares(user_acres)} acres.\n')
+        print(f'{user_acres} ac equals {acres_to_hectares(user_acres)} ha.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 4:
         user_hectares = float(input('Enter an amount in hectares to be converted into acres: '))
         print(f'{user_hectares} ha equals {hectares_to_acres(user_hectares)} ac.\n')
+        input("Conversion complete. Press enter to exit.")
     else:
         raise Exception('Invalid value entered.\n')

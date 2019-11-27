@@ -121,32 +121,42 @@ def astro_choices():
     if conversion == 1:
         user_kilos = float(input('Enter an amount in kilometers to be converted to astronomical units (AU): '))
         print(f'{user_kilos} kms equals {kilometers_to_au(user_kilos)} AU.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 2:
         user_au = float(input('Enter an amount in astronomical units (AU) to be converted to kilometers: '))
         print(f'{user_au} AU equals {au_to_kilometers(user_au)} kms.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 3:
         user_miles = float(input('Enter an amount in miles to be converted to astronomical units (AU): '))
         print(f'{user_miles} miles equals {miles_to_au(user_miles)} AU\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 4:
         user_au = float(input('Enter an amount in astronomical units (AU) to be converted to miles: '))
         print(f'{user_au} AU equals {au_to_miles(user_au)} mi.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 5:
         user_kilos = float(input('Enter an amount in kilometers to be converted to light years (LY): '))
         print(f'{user_kilos} kms equals {kilometers_to_ly(user_kilos)} lys.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 6:
         user_ly = float(input('Enter an amount in light years (LY) to be converted to kilometers: '))
         print(f'{user_ly} ly equals {ly_to_kilometers(user_ly)} kms.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 7:
         user_miles = float(input('Enter an amount in miles to be converted to light years (LY): '))
         print(f'{user_miles} mi equals {miles_to_ly(user_miles)} ly \n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 8:
         user_ly = float(input('Enter an amount in light years to be converted to miles: '))
         print(f'{user_ly} ly equals {ly_to_miles(user_ly)} mi.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 9:
         user_pc = float(input('Enter an amount in parsecs to be converted to light years: '))
         print(f'{user_pc} pc equals {parsecs_to_ly(user_pc)} ly.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 10:
         user_ly = float(input('Enter an amount in light years to be converted to parsecs: '))
         print(f'{user_ly} ly equals {ly_to_parsecs(user_ly)} pc.\n')
+        input("Conversion complete. Press enter to exit.")
     else:
         raise Exception('Invalid value entered.\n')

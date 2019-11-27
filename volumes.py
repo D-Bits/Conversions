@@ -39,8 +39,10 @@ def volume_choices():
     if conversion == 1:
         user_litres = float(input('Enter an amount in litres to be converted into gallons: '))
         print(f'{user_litres} L equals {litres_to_gallons(user_litres)} gal.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 2:
         user_gal = float(input('Enter an amount in gallons to be converted into litres: '))
         print(f'{user_gal} gal equals {gallons_to_litres(user_gal)} L.\n')
+        input("Conversion complete. Press enter to exit.")
     else:
         raise Exception('Invalid value entered.\n')

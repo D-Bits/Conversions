@@ -79,20 +79,26 @@ def temp_choices():
     if conversion == 1:
         user_fahrenheit = float(input('Enter an amount in fahrenheit to be converted to celsius: '))
         print(f'{user_fahrenheit} degrees F equals {fahrenheit_to_celsius(user_fahrenheit)} degrees C.')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 2:
         user_celsius = float(input('Enter an amount in celsius to be converted to fahrenheit: '))
         print(f'{user_celsius} degrees C equals {celsius_to_fahrenheit(user_celsius)} degrees F.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 3:
         user_celsius = float(input('Enter an amount in celsius to be converted to Kelvin: '))
         print(f'{user_celsius} degrees C equals {celsius_to_kelvin} K.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 4:
         user_kelvin = float(input('Enter an amount in Kelvin to be converted to celsius: '))
         print(f'{user_kelvin} degrees K equals {kelvin_to_celsius(user_kelvin)} degrees C.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 5:
         user_fahrenheit = float(input('Enter an amount in fahrenheit to be converted to Kelvin: '))
         print(f'{user_fahrenheit} degrees F equals {fahrenheit_to_kelvin(user_fahrenheit)} degrees K.\n')
+        input("Conversion complete. Press enter to exit.")
     elif conversion == 6:
         user_kelvin = float(input('Enter an amount in fahrenheit to be converted to Kelvin: '))
         print(f'{user_kelvin} degrees K equals {kelvin_to_fahrenheit(user_kelvin)} degrees F.\n')
+        input("Conversion complete. Press enter to exit.")
     else:
         raise Exception('Invalid value entered.\n')
